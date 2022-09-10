@@ -1,0 +1,31 @@
+/* start section heading*/
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        left: 0;
+        top: 50%;
+        background-color: #ddd;
+        z-index: -1;
+    }
+    h3 {
+        font-weight: normal;
+        background-color: $redColor;
+        display: inline-block;
+        color: #fff;
+        padding: 5px 20px;
+        margin: 0;
+        text-align: center;
+        border-radius: 6px;
+        text-transform: uppercase;
+    }
+}
+/* end section heading*/
+

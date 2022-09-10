@@ -1,0 +1,91 @@
+/* start header */
+@import "../pages/globalpage";
+.header {
+    border-bottom: 1px solid #ddd;
+    .container {
+        padding: 20px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        @media ($mxSmall){
+            display: block;
+        }
+        .logo {
+            @media ($mxSmall){
+                text-align: center;
+            }
+            @media ($xSmall){
+                text-align: left;
+                margin-left: 20px;
+            }
+             h1 {
+                margin: 0;
+                font-weight: lighter;
+                color: $titleColor;
+             }
+             p {
+                margin: 0;
+                font-size: 13px;
+                font-weight: normal;
+             }
+        }
+        .navbar {
+             width: 70%;
+             display: flex;
+             align-items: center;
+             justify-content: space-between;
+             background-color: $redColor;
+             padding: 20px 15px; 
+             border-radius: 16px;
+             transition: all 0.5s;
+             @media ($xSmall){
+                width: calc(100% - 40px);
+                display: block;
+                margin: 15px auto 0px;
+                height: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+              @media ($small){
+                height: 17px !important;
+              }
+            @media ($mxSmall){
+                width: calc(100% - 40px);
+            }
+            li {
+                width: 20%;
+                font-size: 15px;
+                text-align: center;
+                @media ($xSmall){
+                        width: 100%;
+                        padding: 5px 0px;
+                        margin: 0;
+                        text-align: center;
+                        &:not(:last-of-type){
+                            border-bottom: 1px solid #fff;
+                        }
+                }
+                a {
+                    text-decoration: none;
+                    color: white;
+                   &:hover {
+                    color: #ddd;
+                    transition: all 0.3s;
+                   } 
+                }
+            }
+        }
+        .icon {
+            position: absolute;
+            right: 20px;
+            top: 30px;
+            display: none;
+            cursor: pointer;
+            @media ($xSmall){
+                display: block;
+            }
+        }
+    }
+}
+/* end header */

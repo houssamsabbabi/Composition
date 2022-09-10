@@ -1,0 +1,19 @@
+.copy-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    p {
+        color: $greyColor;
+        padding: 10px;
+    }
+}
+.copy-right::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    top: 10px;
+    background-color: #c5c5c5;
+}

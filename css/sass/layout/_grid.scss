@@ -1,0 +1,21 @@
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    @media ($small) {
+      width: 540px;
+    }
+    @media ($medium) {
+      width: 720px;
+    }
+    @media ($large) {
+      width: 960px;
+    }
+    @media ($xLarge) {
+      width: 1140px;
+    }
+    @media ($xxLarge) {
+      width: 1320px;
+    }
+}
