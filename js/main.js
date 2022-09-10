@@ -24,7 +24,7 @@ function imgSlider(){
     } else {
         i++;
     }
-  img.src = "/imgs/img-0"+i+".png"; 
+  img.src = "./imgs/img-0"+i+".png"; 
   setTimeout(removeActive(), time);
   setTimeout("imgSlider()", time); 
   setTimeout(addActive(), time);
@@ -51,7 +51,7 @@ nextSlid.addEventListener("click", ()=>{
     }
     removeActive();
     balls[i-1].classList.add("active");
-    img.src = "/imgs/img-0"+i+".png"; 
+    img.src = "./imgs/img-0"+i+".png"; 
 })
 
 prevSlid.addEventListener("click", ()=>{
@@ -62,14 +62,14 @@ prevSlid.addEventListener("click", ()=>{
     }
     removeActive();
     balls[i-1].classList.add("active");
-    img.src = "/imgs/img-0"+i+".png"; 
+    img.src = "./imgs/img-0"+i+".png"; 
 })
 
 balls.forEach((ball)=>{
     ball.addEventListener("click", ()=>{
         removeActive();
         ball.classList.add("active"); 
-        img.src = "/imgs/img-0"+ball.dataset.number+".png"; 
+        img.src = "./imgs/img-0"+ball.dataset.number+".png"; 
     })
 })
 
