@@ -1,13 +1,13 @@
-@import "./sass/helpers/variables";
-@import "./sass/helpers/mixins";
-@import "./sass/layout/grid";
-@import "./sass/pages/globalpage";
+@import "/sass/helpers/variables";
+@import "/sass/helpers/mixins";
+@import "/sass/layout/grid";
+@import "/sass/layout/header";
+@import "/sass/pages/globalpage";
 
-@import "./sass/components/slider";
-@import "./sass/layout/header";
-@import "./sass/pages/homepage";
-@import "./sass/components/buttons";
-@import "./sass/components/headings";
-@import "./sass/layout/footer";
+@import "/sass/components/slider";
+@import "/sass/pages/homepage";
+@import "/sass/components/buttons";
+@import "/sass/components/headings";
+@import "/sass/layout/footer";
 
 
